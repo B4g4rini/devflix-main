@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import logo from "../assets/devflix.png";
+import logo from "../assets/devflix2.png";
 import searchIcon from "../assets/search.svg";
 
 import "./App.css";
@@ -38,21 +38,27 @@ const App = () => {
 
   return (
     <div id="app">
-      <div className="logo">
+       <div className="logo">
         <img src={logo} alt="logo devflix" />
       </div>
-      <div className="search">
-        <input
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={handlekeyPress}
-          placeholder="Pesquise por filmes"
-        />
-        <img
-          src={searchIcon}
-          alt="Icone de pesquisa"
-          onClick={() => searchMovies(searchTerm)}
-        />
+      <div className="trending">
+        <a>
+          Trending Now
+          <img className="fire" src="src/assets/mdi_fire.svg" alt="" />
+        </a>
+        <div className="search">
+          <input
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handlekeyPress}
+            placeholder="Search Movies..."
+          />
+          <img
+            src={searchIcon}
+            alt="Icone de pesquisa"
+            onClick={() => searchMovies(searchTerm)}
+          />
+        </div>
       </div>
       {movies?.length > 0 ? (
         <div className="container">
@@ -65,6 +71,31 @@ const App = () => {
           <h2>Nenhum filme encontrado 😢</h2>
         </div>
       )}
+
+<div className="recomendado">
+        <p>
+          <a>
+            Recomended
+            <img
+              className="play"
+              src="src/assets/streamline_entertainment-control-button-play-button-television-buttons-movies-play-tv-video-controls.svg"
+              alt=""
+            />
+          </a>
+        </p>
+      </div>
+      {movies?.length > 0 ? (
+        <div className="container">
+          {movies.map((movie) => (
+            <MovieCard key={movie.imdbID} movies={movie} />
+          ))}
+        </div>
+      ) : (
+        <div className="empty">
+          <h2></h2>
+        </div>
+      )}
+
       <Footer link={"https://github.com/B4g4rini"}>B4g4rini</Footer>
     </div>
   );
