@@ -123,19 +123,21 @@
     margin-top: 2em;
   }
   .movieType h1 {
-    font-size: 15pt;
+    font-size: 10pt;
+    height: 10px;
+  
   }
 
   .movieInfo img {
     height: 220px;
   }
   .containerMisc {
-    padding-top: 6em;
+    padding-top: 3em;
     display: block;
   }
 
   .desc {
-    padding-bottom: 3.5em;
+    padding-bottom: 4.0em;
   }
 }
 
