@@ -44,7 +44,7 @@ const App = () => {
       <div className="trending">
         <a>
           Trending Now
-          <img className="fire" src="src/assets/mdi_fire.svg" alt="fogo vermelho" />
+          <img className="fire" src="src/assets/fire.png" alt="fogo vermelho" />
         </a>
         <div className="search">
           <input
@@ -78,7 +78,7 @@ const App = () => {
             Recomended
             <img
               className="play"
-              src="src/assets/streamline_entertainment-control-button-play-button-television-buttons-movies-play-tv-video-controls.svg"
+              src="src/assets/play.png"
               alt="Imagem de um play"
               />
               </a>
