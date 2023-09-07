@@ -187,10 +187,13 @@ body {
     display: flex;
     justify-content: center;
     
+    
     }
   .logo img {
     width: 70%;
     height: auto;
+    display: flex;
+    
   }
   .search {
     width: 99%;
