@@ -44,7 +44,7 @@ const App = () => {
       <div className="trending">
         <a>
           Trending Now
-          <img className="fire" src="src/assets/mdi_fire.svg" alt="" />
+          <img className="fire" src="src/assets/mdi_fire.svg" alt="fogo vermelho" />
         </a>
         <div className="search">
           <input
@@ -79,10 +79,10 @@ const App = () => {
             <img
               className="play"
               src="src/assets/streamline_entertainment-control-button-play-button-television-buttons-movies-play-tv-video-controls.svg"
-              alt=""
-            />
-          </a>
-        </p>
+              alt="Imagem de um play"
+              />
+              </a>
+            </p>
       </div>
       {movies?.length > 0 ? (
         <div className="container">
