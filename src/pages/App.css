@@ -171,7 +171,7 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
   #app {
     padding: 3rem 1rem;
   }
@@ -183,9 +183,14 @@ body {
   }
   .logo {
     margin: 35px;
+    display: flex;
+    justify-content: center;
+    
   }
   .search {
     width: 100%;
+    height: 10px;
+    
   }
   .movie {
     width: 100%;
